@@ -666,3 +666,27 @@ body {
 #homeq-web-widget .pagination-dots {
     color: #00352F !important;
 }
+/* För mobil i vertikalt läge (portrait) */
+@media (max-width: 768px) and (orientation: portrait) {
+    .properties-gallery {
+        flex-direction: column; /* Stapla elementen ovanpå varandra */
+    }
+
+    .property-item {
+        flex: 1 1 100%; /* Tar upp hela bredden */
+        margin-bottom: 20px; /* Lägger till lite vertikalt avstånd */
+    }
+}
+
+/* För mobil i horisontellt läge (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+    .properties-gallery {
+        flex-wrap: wrap;
+        justify-content: space-between; /* Sprider ut blocken jämnt */
+    }
+
+    .property-item {
+        flex: 1 1 calc(50% - 10px); /* Delar bredden i två kolumner */
+        margin-bottom: 20px; /* Lägger till avstånd mellan rader */
+    }
+}
