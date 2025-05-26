@@ -70,7 +70,7 @@ body {
     font-weight: 300;
 }
 
-/* "Mina Sidor"-knapp i navbar */
+/* "Felanmälan"-knapp i navbar */
 .nav-button.right {
     background-color: #00352F; /* Mörkgrön bakgrund */
     border: 2px solid #00352F;
@@ -536,7 +536,7 @@ body {
     }
 
     .nav-button.right {
-        display: none; /* Dölj "Mina Sidor"-knappen i mobilversionen */
+        display: none; /* Dölj "Felanmälan Sidor"-knappen i mobilversionen */
     }
 
     .menu-icon {
